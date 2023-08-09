@@ -5,6 +5,8 @@ import { ChevronRightIcon } from '@heroicons/react/20/solid'
 import { Button } from '@/components/Button'
 
 import citationImage from '@/images/photos/citations.png'
+import avatarImage from '@/images/avatar.jpg'
+
 import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
 import {
@@ -22,7 +24,6 @@ import logoNASA from '@/images/logos/nasa.svg'
 
 import { formatDate } from '@/lib/formatDate'
 import { getAllArticles } from '@/lib/getAllArticles'
-
 
 function ArrowDownIcon(props) {
   return (
@@ -221,9 +222,10 @@ export default async function Home() {
       <Container className="mx-auto max-w-4xl pt-12">
         <div className="mx-auto">
           <div className='py-5'>
-            <img className="inline-block h-32 w-32 rounded-full shadow-lg dark:shadow-zinc-500/40 "
-            src="https://media.licdn.com/dms/image/D5603AQHG97E2GiuxAQ/profile-displayphoto-shrink_800_800/0/1681929885711?e=1696464000&v=beta&t=7zqxVmLBFtWczjIlqfNawt5DGayTFn9gN1yXzVBpKkg"
-            alt=""
+            <Image
+               className='inline-block h-32 w-32 rounded-full shadow-lg dark:shadow-zinc-500/40'
+              src={avatarImage}
+              
             />
           </div>
           <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
@@ -310,7 +312,7 @@ export default async function Home() {
             </p>
             <ul role="list-desc">
               {deployments.map((deployment) => (
-                <li>
+                <li key="1">
                     <h2 className="text-base tracking-tight text-zinc-600 dark:text-zinc-400">
                       <a target="blank" href={deployment.href} className="flex gap-x-2 items-center">
                         <span className="truncate">{deployment.teamName}</span>
@@ -325,7 +327,7 @@ export default async function Home() {
             </p>
             <ul role="list-desc">
               {antares.map((deployment) => (
-                <li>
+                <li key="2">
                     <h2 className="text-base tracking-tight text-zinc-600 dark:text-zinc-400">
                       <a target="blank" href={deployment.href} className="flex gap-x-2 items-center">
                         <span className="truncate">{deployment.teamName}</span>
