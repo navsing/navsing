@@ -225,7 +225,7 @@ export default async function Home() {
             <Image
                className='inline-block h-32 w-32 rounded-full shadow-lg dark:shadow-zinc-500/40'
               src={avatarImage}
-              
+              alt="Avatar Image"
             />
           </div>
           <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-4xl">
@@ -238,7 +238,7 @@ export default async function Home() {
             At Meta, I build products that bring the world closer together. <br /><br />
             Previously, I led Tech readiness for large-scale events (Prime Day, Black Friday etc.) for Amazon globally,
              enabling 200+ services to render customer experience on Amazon. Before Amazon, 
-             I designed and developed Audible's Publishing Tools. I have also worked at NASA with some 
+             I designed and developed Audible Publishing Tools. I have also worked at NASA with some 
              legendary astronomers to build the software begind the largest telescopic camera (LSST) in the world (Rubin Observatory, Chile).
           </p>
           <div className="mt-6 flex gap-6">
