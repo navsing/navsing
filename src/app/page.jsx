@@ -24,6 +24,16 @@ import logoNASA from '@/images/logos/nasa.svg'
 
 import { formatDate } from '@/lib/formatDate'
 import { getAllArticles } from '@/lib/getAllArticles'
+import { NextSeo } from 'next-seo'
+const url = 'https://navsing.com';
+const title = 'Navdeep Singh';
+const description = 'Technical PM Lead, Meta'
+const featuredImage = {
+  url: `https://og-image-smoky-three.vercel.app/**Nav%20Singh**%20%7C%20Home.png?theme=light&md=1&fontSize=100px&images=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F19936255%3Fs%3D460%26u%3D02785bb79c03d59c8bf6af91403cc95460b31314%26v%3D4&widths=350&heights=350`,
+  alt: title
+};
+
+
 
 function ArrowDownIcon(props) {
   return (
@@ -42,7 +52,7 @@ function Resume() {
   let resume = [
     {
       company: 'Meta',
-      title: 'Product Lead',
+      title: 'Technical PM Lead',
       logo: logoMeta,
       start: '2021',
       end: {
@@ -52,7 +62,7 @@ function Resume() {
     },
     {
       company: 'Amazon',
-      title: 'Sr. Tech PM',
+      title: 'Staff Tech PM',
       logo: logoAmazon,
       start: '2019',
       end: '2021',
@@ -219,6 +229,7 @@ export default async function Home() {
 
   return (
     <>
+    
       <Container className="mx-auto max-w-4xl pt-12">
         <div className="mx-auto">
           <div className='py-5'>
@@ -232,14 +243,13 @@ export default async function Home() {
             Navdeep Singh
           </h1>
           <h2 className='text-base text-zinc-600 dark:text-zinc-400 sm:text-lg pt-1'>
-           Product TPM Lead, Meta 
+           Technical PM Lead, Meta 
           </h2>
           <p className="mt-6 text-sm max-w-xl text-zinc-600 dark:text-zinc-400">
-            At Meta, I build products that bring the world closer together. <br /><br />
-            Previously, I led Tech readiness for large-scale events (Prime Day, Black Friday etc.) for Amazon globally,
-             enabling 200+ services to render customer experience on Amazon. Before Amazon, 
-             I designed and developed Audible Publishing Tools. I have also worked at NASA with some 
-             legendary astronomers to build the software begind the largest telescopic camera (LSST) in the world (Rubin Observatory, Chile).
+            I lead Creator and Ads Monetization teams at Meta, enhancing creator experiences and incentivizing creators to deliver great content <br /><br />
+            Before, I managed tech readiness for Amazon events globally (Prime Day, Black Friday etc.), optimizing 200+ services for customer experience. 
+            Prior to Amazon, I built Content and Publishing Tools at Audible. 
+            Additionally, I collaborated with astronomers at NASA on the monumental LSST software for the largest telescopic camera on earth at the Rubin Observatory, Chile.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -248,17 +258,20 @@ export default async function Home() {
               icon={NewMailIcon}
             />
             <SocialLink
-              href="https://twitter.com"
+              target="_blank"
+              href="https://twitter.com/navdeep_ua"
               aria-label="Follow on Twitter"
               icon={TwitterIcon}
             />
             <SocialLink
-              href="https://github.com"
+              target="_blank"
+              href="https://github.com/navsing"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              target="_blank"
+              href="https://linkedin.com/in/navsing"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />            
