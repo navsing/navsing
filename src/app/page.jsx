@@ -243,11 +243,12 @@ export default async function Home() {
             Navdeep Singh
           </h1>
           <h2 className='text-base text-zinc-600 dark:text-zinc-400 sm:text-lg pt-1'>
-           Technical PM Lead, Meta 
+           Head of Technical PMs, Meta 
           </h2>
           <p className="mt-6 text-sm max-w-xl text-zinc-600 dark:text-zinc-400">
-            I lead Creator and Ads Monetization teams at Meta, enhancing creator experiences and incentivizing creators to deliver great content <br /><br />
-            Before, I managed tech readiness for Amazon events globally (Prime Day, Black Friday etc.), optimizing 200+ services for customer experience. 
+            I support a talented group of Technical PMs who leads the technical strategy and execution for Facebook Creators and Publishers, Creator Monetization, Facebook Marketplace, Facebook Dating, Gaming, and Events.
+            <br /><br />
+            Before, I managed tech readiness for Amazon events globally (Prime Day, Black Friday etc.), optimizing 200+ services to render customer experience on Amazon.com. 
             Prior to Amazon, I built Content and Publishing Tools at Audible. 
             Additionally, I collaborated with astronomers at NASA on the monumental LSST software for the largest telescopic camera on earth at the Rubin Observatory, Chile.
           </p>
@@ -294,7 +295,7 @@ export default async function Home() {
             <h1 className="text-2xl font-bold text-zinc-800 dark:text-zinc-100 sm:text-3xl">
               Research 
               <p className="text-sm font-semibold max-w-xl text-zinc-600 dark:text-zinc-400">
-                111 citations 
+                275 citations 
               </p>
             </h1>
             {articles.map((article) => (
