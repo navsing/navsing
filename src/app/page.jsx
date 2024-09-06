@@ -243,7 +243,7 @@ export default async function Home() {
             Navdeep Singh
           </h1>
           <h2 className='text-base text-zinc-600 dark:text-zinc-400 sm:text-lg pt-1'>
-           Head of Technical PMs, Meta 
+           Manager, Technical PMs, Meta 
           </h2>
           <p className="mt-6 text-sm max-w-xl text-zinc-600 dark:text-zinc-400">
             I support a talented group of Technical PMs who leads the technical strategy and execution for Facebook Creators and Publishers, Creator Monetization, Facebook Marketplace, Facebook Dating, Gaming, and Events.
